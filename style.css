@@ -1,0 +1,91 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    background-color: var(--Very-Light-Gray);
+}
+.container{
+    margin-top:5rem;
+    margin-bottom:5rem;
+    
+}
+.container p{color:var(--Grayish-Blue);}
+.titles{
+    text-align: center;
+
+}
+.first{font-weight:400;color:var(--Grayish-Blue);}
+.second{font-weight:700;color:var(--Very-Dark-Blue);}
+.paragraph{font-size:1.2rem;text-align: center;padding:2rem 2rem;}
+.cards{display:grid;grid-template-columns: 1fr;grid-column-gap: 20px;margin:2rem 2rem;}
+.card{background-color:white;margin:20px;min-height:28vh;border-radius: 10px;padding:2rem;-webkit-box-shadow: 0px 8px 16px -2px var(--Very-Dark-Blue); 
+    box-shadow: 0px 5px 14px -2px var(--Grayish-Blue);}
+.card h3{color:var(--Very-Dark-Blue);font-size:1.4rem;font-weight: 600;margin-bottom:10px;}
+.card img{float: right;padding-top:30px;}
+
+.card1{
+    border-top:5px solid var(--Cyan);
+}
+.card2{
+    border-top:5px solid var(--Red);
+}
+.card3{
+    border-top:5px solid var(--Orange);
+}
+.card4{
+    border-top:5px solid var(--Blue);
+}
+
+@media only screen and (min-width:1280px) {
+    
+    .card{
+        display:block;
+         width:28vw;
+         height:23vh;
+          }
+
+    .card1{
+        position:absolute;
+        top:66%;
+        left:8%;
+        transform:translate(-8%,-66%);
+    }
+    .card4{
+        position:absolute;
+        top:66%;
+        left:92%;
+        transform:translate(-92%,-66%);
+    }
+    .card3{
+        position:absolute;
+        top:95%;
+        left:50%;
+        transform:translate(-50%,-95%);
+    }
+    .card2{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .paragraph{text-align: center;
+    padding-right:20rem;
+    padding-left:20rem;
+    padding-bottom:5rem;}
+}
